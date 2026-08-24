@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "534914046991",
+    "project_id": "proyecto-daniel-duran-zy9k9a",
+    "storage_bucket": "proyecto-daniel-duran-zy9k9a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534914046991:android:8f4a565536d0fd2799977a",
+        "android_client_info": {
+          "package_name": "com.mycompany.proyectodanielduran"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYRQiWeO--ayTBawSOLCvSsFSElAMB674"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
