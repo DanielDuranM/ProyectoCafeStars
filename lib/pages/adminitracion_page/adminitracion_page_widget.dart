@@ -100,10 +100,11 @@ class _AdminitracionPageWidgetState extends State<AdminitracionPageWidget> {
                       children: [
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
-                              10.0, 0.0, 10.0, 0.0),
+                              5.0, 0.0, 5.0, 0.0),
                           child: FFButtonWidget(
-                            onPressed: () {
-                              print('Button pressed ...');
+                            onPressed: () async {
+                              context.pushNamed(
+                                  AdmintracionProductosPageWidget.routeName);
                             },
                             text: 'Adminitrar Productos',
                             options: FFButtonOptions(
@@ -140,10 +141,11 @@ class _AdminitracionPageWidgetState extends State<AdminitracionPageWidget> {
                         ),
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
-                              10.0, 0.0, 10.0, 0.0),
+                              5.0, 0.0, 5.0, 0.0),
                           child: FFButtonWidget(
-                            onPressed: () {
-                              print('Button pressed ...');
+                            onPressed: () async {
+                              context.pushNamed(
+                                  AdminitracionusuariosWidget.routeName);
                             },
                             text: 'Adminitrar Usuarios',
                             options: FFButtonOptions(
@@ -230,8 +232,8 @@ class _AdminitracionPageWidgetState extends State<AdminitracionPageWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 10.0, 0.0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            context.pushNamed(HistorialPedidosWidget.routeName);
                           },
                           text: 'Historial Pedidos',
                           options: FFButtonOptions(

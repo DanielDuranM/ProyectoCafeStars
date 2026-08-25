@@ -138,6 +138,50 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: AdminitracionPageWidget.routeName,
           path: AdminitracionPageWidget.routePath,
           builder: (context, params) => AdminitracionPageWidget(),
+        ),
+        FFRoute(
+          name: AdmintracionProductosPageWidget.routeName,
+          path: AdmintracionProductosPageWidget.routePath,
+          builder: (context, params) => AdmintracionProductosPageWidget(),
+        ),
+        FFRoute(
+          name: CrearProductoWidget.routeName,
+          path: CrearProductoWidget.routePath,
+          builder: (context, params) => CrearProductoWidget(),
+        ),
+        FFRoute(
+          name: EditarProductoWidget.routeName,
+          path: EditarProductoWidget.routePath,
+          builder: (context, params) => EditarProductoWidget(
+            documentoreferencia: params.getParam(
+              'documentoreferencia',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['productos'],
+            ),
+          ),
+        ),
+        FFRoute(
+          name: AdminitracionusuariosWidget.routeName,
+          path: AdminitracionusuariosWidget.routePath,
+          builder: (context, params) => AdminitracionusuariosWidget(),
+        ),
+        FFRoute(
+          name: EditarUsuarioWidget.routeName,
+          path: EditarUsuarioWidget.routePath,
+          builder: (context, params) => EditarUsuarioWidget(
+            usuarioref: params.getParam(
+              'usuarioref',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['users'],
+            ),
+          ),
+        ),
+        FFRoute(
+          name: HistorialPedidosWidget.routeName,
+          path: HistorialPedidosWidget.routePath,
+          builder: (context, params) => HistorialPedidosWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

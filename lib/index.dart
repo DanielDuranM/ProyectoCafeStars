@@ -16,3 +16,12 @@ export '/pages/pedidos_pendientes/pedidos_pendientes_widget.dart'
     show PedidosPendientesWidget;
 export '/pages/adminitracion_page/adminitracion_page_widget.dart'
     show AdminitracionPageWidget;
+export '/admintracion_productos_page/admintracion_productos_page_widget.dart'
+    show AdmintracionProductosPageWidget;
+export '/crear_producto/crear_producto_widget.dart' show CrearProductoWidget;
+export '/editar_producto/editar_producto_widget.dart' show EditarProductoWidget;
+export '/adminitracionusuarios/adminitracionusuarios_widget.dart'
+    show AdminitracionusuariosWidget;
+export '/editar_usuario/editar_usuario_widget.dart' show EditarUsuarioWidget;
+export '/historial_pedidos/historial_pedidos_widget.dart'
+    show HistorialPedidosWidget;
